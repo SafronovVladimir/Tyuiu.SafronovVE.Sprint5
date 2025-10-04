@@ -35,7 +35,7 @@ internal class Program
 
 
         Console.WriteLine("Файл: " + res);
-        Console.WriteLine("Создан");
+        Console.WriteLine("Создан!");
         Console.ReadKey();
     }
 }

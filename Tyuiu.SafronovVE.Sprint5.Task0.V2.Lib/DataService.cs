@@ -5,7 +5,7 @@ namespace Tyuiu.SafronovVE.Sprint5.Task0.V2.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.tx";
+            string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
 
             double z = Math.Exp(x) / x;
 
