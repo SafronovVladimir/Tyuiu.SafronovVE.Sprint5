@@ -19,7 +19,7 @@ namespace Tyuiu.SafronovVE.Sprint5.Task1.V17.Lib
             string strY;
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = 2 * x - 4 + (2 * x - 1) / (Math.Sin(x) + 1);
+                y = Math.Round(2 * x - 4 + (2 * x - 1) / (Math.Sin(x) + 1), 2);
                 strY = Convert.ToString(y);
 
                 if (x != stopValue)
