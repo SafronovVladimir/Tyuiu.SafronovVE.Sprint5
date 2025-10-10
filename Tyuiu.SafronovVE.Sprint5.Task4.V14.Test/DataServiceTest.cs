@@ -6,7 +6,7 @@
         [TestMethod]
         public void CheckedExistsFile()
         {
-            string path = @"C:\DataSprint5\InPutDataFileTask4V14.txt";
+            string path = @"C:\DataSprint5\InPutDataFileTask4V1.txt";
             FileInfo fileInfo = new FileInfo(path);
             bool res = fileInfo.Exists;
             bool wait = true;
