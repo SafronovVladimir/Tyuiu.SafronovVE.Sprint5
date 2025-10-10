@@ -5,9 +5,6 @@ internal class Program
     private static void Main(string[] args)
     {
         DataService ds = new DataService();
-
-        int x = 3;
-
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
