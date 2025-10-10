@@ -1,4 +1,5 @@
-﻿using Tyuiu.SafronovVE.Sprint5.Task4.V14.Lib;
+﻿using System.Dynamic;
+using Tyuiu.SafronovVE.Sprint5.Task4.V14.Lib;
 internal class Program
 {
     private static void Main(string[] args)
@@ -11,7 +12,8 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V14.txt");
+        string filePath = Path.GetTempPath();
+        string path = Path.Combine(filePath, "InPutDataFileTask4V14.txt");
         Console.WriteLine("Файл находится: " + path);
 
         Console.WriteLine("***************************************************************************");
