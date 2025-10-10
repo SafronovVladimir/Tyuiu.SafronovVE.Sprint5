@@ -18,9 +18,7 @@ internal class Program
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
-        var res = ds.LoadFromDataFile(path);
-
-        Console.WriteLine(res);
+        Console.WriteLine(ds.LoadFromDataFile(path));
 
         Console.ReadKey();
     }
