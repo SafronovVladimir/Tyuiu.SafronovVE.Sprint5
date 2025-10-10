@@ -21,5 +21,7 @@ internal class Program
         var res = ds.LoadFromDataFile(path);
 
         Console.WriteLine(res);
+
+        Console.ReadKey();
     }
 }
