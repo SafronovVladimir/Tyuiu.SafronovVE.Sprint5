@@ -1,6 +1,4 @@
-﻿using System.Dynamic;
-using System.Globalization;
-using Tyuiu.SafronovVE.Sprint5.Task5.V5.Lib;
+﻿using Tyuiu.SafronovVE.Sprint5.Task5.V5.Lib;
 internal class Program
 {
     private static void Main(string[] args)
