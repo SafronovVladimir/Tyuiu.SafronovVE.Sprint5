@@ -6,8 +6,22 @@ namespace Tyuiu.SafronovVE.Sprint5.Task5.V5.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            File.WriteAllText(path, "-3.09 3 3 7.48 -3.22 17.29 8 -4 0.83 14.18 -6 8.15 -8.7 -3.06 20 -4 15.82 -10 9 -3");
-            
+            if (string.IsNullOrEmpty(path))
+            {
+                throw new ArgumentException("Path cannot be null or empty", nameof(path));
+            }
+
+            string? directory = Path.GetDirectoryName(path);
+            if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
+            if (!File.Exists(path))
+            {
+                File.WriteAllText(path, "-3.09 3 3 7.48 -3.22 17.29 8 -4 0.83 14.18 -6 8.15 -8.7 -3.06 20 -4 15.82 -10 9 -3");
+            }
+
             string text = File.ReadAllText(path);
             string[] strings = text.Split(' ');
             double[] doubles = new double[20];
