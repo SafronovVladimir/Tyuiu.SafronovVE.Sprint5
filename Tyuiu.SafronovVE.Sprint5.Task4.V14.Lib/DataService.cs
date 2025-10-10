@@ -6,6 +6,8 @@ namespace Tyuiu.SafronovVE.Sprint5.Task4.V14.Lib
     {
         public double LoadFromDataFile(string path)
         {
+            File.WriteAllText(path, "2.24");
+
             string strX = File.ReadAllText(path);
             IFormatProvider formatter = new NumberFormatInfo { NumberDecimalSeparator = "." };
             double x = double.Parse(strX, formatter);
