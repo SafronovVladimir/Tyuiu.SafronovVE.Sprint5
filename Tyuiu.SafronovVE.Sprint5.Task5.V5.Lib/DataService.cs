@@ -16,7 +16,7 @@ namespace Tyuiu.SafronovVE.Sprint5.Task5.V5.Lib
             {
                 doubles[i] = double.Parse(strings[i], formatter);
             }
-            double res = doubles.Max() - doubles.Min();
+            double res = Math.Round(doubles.Max() - doubles.Min(), 3);
             return res;
         }
     }
