@@ -8,7 +8,8 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V14.txt");
+        string path = @$"{Directory.GetCurrentDirectory()}\InPutDataFileTask4V14.txt";
+
         Console.WriteLine("Файл находится: " + path);
 
         Console.WriteLine("***************************************************************************");
