@@ -6,7 +6,7 @@
         [TestMethod]
         public void CheckedExistsFile()
         {
-            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask5V5.txt");
+            string path = Path.Combine($"{Directory.GetCurrentDirectory()}", "InPutDataFileTask5V5.txt");
             FileInfo fileInfo = new FileInfo(path);
             bool res = fileInfo.Exists;
             bool wait = true;
