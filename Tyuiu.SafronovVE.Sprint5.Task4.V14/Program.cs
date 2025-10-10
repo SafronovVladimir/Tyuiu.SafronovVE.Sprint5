@@ -8,7 +8,7 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        string path = @$"{Directory.GetCurrentDirectory()}\InPutDataFileTask4V14.txt";
+        string path = Path.Combine($"{Directory.GetCurrentDirectory()}", "InPutDataFileTask4V14.txt");
 
         Console.WriteLine("Файл находится: " + path);
 
