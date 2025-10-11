@@ -32,7 +32,8 @@ namespace Tyuiu.SafronovVE.Sprint5.Task6.V11.Lib
                     k += 1;
                 }
             }
-            return k;
+            int res = k;
+            return res;
         }
     }
 }
