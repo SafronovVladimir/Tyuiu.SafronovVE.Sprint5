@@ -19,10 +19,9 @@ namespace Tyuiu.SafronovVE.Sprint5.Task7.V8.Lib
 
             if (!File.Exists(path))
             {
-                File.WriteAllText(path, "");
+                File.WriteAllText(path, "Привет, World! This моя Первая ПРограмма.");
             }
 
-            File.WriteAllText(path, "Привет, World! This моя Первая ПРограмма.");
             string str = File.ReadAllText(path);
             string res = "";
             foreach (char i in str)
