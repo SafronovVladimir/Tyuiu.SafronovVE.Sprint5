@@ -10,6 +10,7 @@ internal class Program
         Console.WriteLine("***************************************************************************");
 
         string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask7V8.txt");
+        string pathToSave = Path.Combine("C:", "DataSprint5", "OutPutDataFileTask7V8.txt");
 
         Console.WriteLine("Файл находится: " + path);
 
