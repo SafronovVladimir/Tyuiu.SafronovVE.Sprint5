@@ -9,7 +9,7 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        string path = Path.Combine($"{Directory.GetCurrentDirectory()}", "InPutDataFileTask7V5.txt");
+        string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask7V8.txt");
 
         Console.WriteLine("Файл находится: " + path);
 
