@@ -18,7 +18,9 @@ internal class Program
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
         var res = ds.LoadDataAndSave(path);
-        Console.WriteLine("Данные сохранены по пути: " + path);
+
+        File.WriteAllText(pathToSave, res);
+        Console.WriteLine("Данные сохранены по пути: " + pathToSave);
 
         Console.ReadKey();
     }

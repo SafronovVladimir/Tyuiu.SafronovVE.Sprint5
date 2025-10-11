@@ -36,8 +36,7 @@ namespace Tyuiu.SafronovVE.Sprint5.Task7.V8.Lib
                     res += i.ToString();
                 }
             }
-            File.WriteAllText(, res);
-            return path;
+            return res;
         }
     }
 }
