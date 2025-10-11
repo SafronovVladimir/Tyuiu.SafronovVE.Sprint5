@@ -6,22 +6,7 @@ namespace Tyuiu.SafronovVE.Sprint5.Task7.V8.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ArgumentException("Path cannot be null or empty", nameof(path));
-            }
-
-            string? directory = Path.GetDirectoryName(path);
-            if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
-            {
-                Directory.CreateDirectory(directory);
-            }
-
-            if (!File.Exists(path))
-            {
-                File.WriteAllText(path, "Привет, World! This моя Первая ПРограмма.");
-            }
-
+            File.WriteAllText(path, "Привет, World! This моя Первая ПРограмма.");
             string str = File.ReadAllText(path);
             string res = "";
             foreach (char i in str)
