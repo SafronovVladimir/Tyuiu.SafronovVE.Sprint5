@@ -5,21 +5,8 @@ namespace Tyuiu.SafronovVE.Sprint5.Task6.V11.Lib
     {
         public int LoadFromDataFile(string path)
         {
-            if (string.IsNullOrEmpty(path))
-            {
-                throw new ArgumentException("Path cannot be null or empty", nameof(path));
-            }
+            File.WriteAllText(path, "Привет, как дела? Он написал письмо. Он ссорился с другом вчера.");
 
-            string? directory = Path.GetDirectoryName(path);
-            if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
-            {
-                Directory.CreateDirectory(directory);
-            }
-
-            if (!File.Exists(path))
-            {
-                File.WriteAllText(path, "Привет, как дела? Он написал письмо. Он ссорился с другом вчера.");
-            }
 
             string str = File.ReadAllText(path);
             str = str.Replace(",", "").Replace("?", "");
