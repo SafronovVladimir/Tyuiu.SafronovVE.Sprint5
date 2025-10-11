@@ -18,7 +18,7 @@ namespace Tyuiu.SafronovVE.Sprint5.Task6.V11.Lib
 
             if (!File.Exists(path))
             {
-                File.WriteAllText(path, "2.24");
+                File.WriteAllText(path, "Привет, как дела? Он написал письмо. Он ссорился с другом вчера.");
             }
 
             string str = File.ReadAllText(path);
